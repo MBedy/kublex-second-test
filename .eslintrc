@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "extends": ["universe/native", "universe/shared/typescript-analysis"],
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "import/namespace": 0,
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "linebreak-style": 0,
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.d.ts"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ]
+}
